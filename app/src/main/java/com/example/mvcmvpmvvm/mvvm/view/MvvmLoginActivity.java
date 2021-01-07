@@ -45,12 +45,12 @@ public class MvvmLoginActivity extends AppCompatActivity {
         public void onChanged(@Nullable Boolean isLoginSuccessFul) {
             if (isLoginSuccessFul) {
                 Toast.makeText(MvvmLoginActivity.this,
-                        loginVM.getUserName() + " Login Successful",
+                        loginVM.getPersonName() + " "  + loginVM.getPersionId() + " Login Successful",
                         Toast.LENGTH_SHORT)
                         .show();
             } else {
                 Toast.makeText(MvvmLoginActivity.this,
-                        "Login Failed",
+                        loginVM.getPersonName() + " " + loginVM.getPersionId() + " Login Failed",
                         Toast.LENGTH_SHORT)
                         .show();
             }
